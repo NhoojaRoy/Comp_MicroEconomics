@@ -1,5 +1,3 @@
-
-
 maximize
 11x+4.25y+9z
 
