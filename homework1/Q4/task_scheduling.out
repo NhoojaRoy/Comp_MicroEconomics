@@ -26,53 +26,53 @@ Objective:  total_time = 9 (MINimum)
                                    1                           1 
     10 one_earlier[tC,tC]
                                    0                           1 
-    11 last_one[tA]                0            -0               
-    12 last_one[tB]                9            -0               
-    13 last_one[tC]                5            -0               
+    11 last_one[tA]                9            -0               
+    12 last_one[tB]                0            -0               
+    13 last_one[tC]                4            -0               
     14 time_difference_constraint[tA,tA]
                                    0            -0               
     15 time_difference_constraint[tA,tB]
-                                  91            10               
-    16 time_difference_constraint[tA,tC]
-                                  95            10               
-    17 time_difference_constraint[tB,tA]
                                    9             8               
+    16 time_difference_constraint[tA,tC]
+                                   5             5               
+    17 time_difference_constraint[tB,tA]
+                                  91            10               
     18 time_difference_constraint[tB,tB]
                                    0            -0               
     19 time_difference_constraint[tB,tC]
-                                   4             4               
-    20 time_difference_constraint[tC,tA]
-                                   5             5               
-    21 time_difference_constraint[tC,tB]
                                   96            10               
+    20 time_difference_constraint[tC,tA]
+                                  95            10               
+    21 time_difference_constraint[tC,tB]
+                                   4             4               
     22 time_difference_constraint[tC,tC]
                                    0            -0               
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
      1 scheduled_time[tA]
-                                   9             0               
-     2 scheduled_time[tB]
                                    0             0               
+     2 scheduled_time[tB]
+                                   9             0               
      3 scheduled_time[tC]
-                                   4             0               
+                                   5             0               
      4 last_time                   9                             
      5 earlier_than[tA,tA]
                     *              0             0             1 
      6 earlier_than[tA,tB]
-                    *              0             0             1 
+                    *              1             0             1 
      7 earlier_than[tB,tA]
-                    *              1             0             1 
-     8 earlier_than[tA,tC]
                     *              0             0             1 
-     9 earlier_than[tC,tA]
+     8 earlier_than[tA,tC]
                     *              1             0             1 
+     9 earlier_than[tC,tA]
+                    *              0             0             1 
     10 earlier_than[tB,tB]
                     *              0             0             1 
     11 earlier_than[tB,tC]
-                    *              1             0             1 
-    12 earlier_than[tC,tB]
                     *              0             0             1 
+    12 earlier_than[tC,tB]
+                    *              1             0             1 
     13 earlier_than[tC,tC]
                     *              0             0             1 
 

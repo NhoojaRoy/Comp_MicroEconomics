@@ -10,7 +10,7 @@ s.t. one_earlier{i in TASKS, j in TASKS}:
 earlier_than[i,j]+earlier_than[j,i] <= 1;
 s.t. last_one{i in TASKS}: last_time >= scheduled_time[i];
 s.t. time_difference_constraint{i in TASKS, j in TASKS}:
-scheduled_time[j] - scheduled_time[i] >= time_between[i,j] - max_time*earlier_than[j,i];
+scheduled_time[j] - scheduled_time[i] >= time_between[j,i] - max_time * earlier_than[j,i];
 
 data;
 set TASKS := tA tB tC;

@@ -1,1 +1,5 @@
-The code written in this folder is my own --Nhooja Roy.
+The homework was completed independently by me, and a final
+cross check of the answers was conducted in collaboration with
+Owen Dong.
+
+--Nhooja Roy
