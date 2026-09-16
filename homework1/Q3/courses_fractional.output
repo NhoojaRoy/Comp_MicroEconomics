@@ -1,0 +1,40 @@
+Problem:    courses_cont
+Rows:       4
+Columns:    4
+Non-zeros:  16
+Status:     OPTIMAL
+Objective:  eff = 8 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 eff          B              8                             
+     2 fulfil[NS]   NL            10            10                    0.153846 
+     3 fulfil[SS]   NL            10            10                         0.5 
+     4 fulfil[H]    NL            10            10                    0.192308 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 select[ITN]  B              0             0             1 
+     2 select[THO]  B              1             0             1 
+     3 select[TUOB] NU             1             0             1     -0.461538 
+     4 select[ABIT] B            0.5             0             1 
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 1.78e-15 on row 1
+        max.rel.err = 1.04e-16 on row 1
+        High quality
+
+KKT.PB: max.abs.err = 2.22e-16 on column 2
+        max.rel.err = 1.45e-16 on column 1
+        High quality
+
+KKT.DE: max.abs.err = 8.88e-16 on column 2
+        max.rel.err = 8.07e-17 on column 2
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
