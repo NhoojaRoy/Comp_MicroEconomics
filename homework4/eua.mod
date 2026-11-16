@@ -5,11 +5,11 @@ param preferred_probability {PREFERENCES, OUTCOMES};
 param other_probability {PREFERENCES, OUTCOMES};
 
 var utility {OUTCOMES} >= 0, <= 1;
-var margin;
+var epsilon;
 
-maximize minimum_margin: margin;
+maximize minimum_margin: epsilon;
 
-s.t. consistency {k in PREFERENCES}: sum {o in OUTCOMES} preferred_probability[k,o] * utility[o] - sum {o in OUTCOMES} other_probability[k,o] * utility[o] >= margin;
+s.t. consistency {k in PREFERENCES}: sum {o in OUTCOMES} preferred_probability[k,o] * utility[o] - sum {o in OUTCOMES} other_probability[k,o] * utility[o] >= epsilon;
 
 
 data;
