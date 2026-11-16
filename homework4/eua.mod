@@ -1,7 +1,7 @@
 set OUTCOMES;
 set PREFERENCES;
 
-param preferred_probability {PREFERENCES, OUTCOMES};
+param prefered_probability {PREFERENCES, OUTCOMES};
 param other_probability {PREFERENCES, OUTCOMES};
 
 var utility {OUTCOMES} >= 0, <= 1;
@@ -9,7 +9,7 @@ var epsilon;
 
 maximize minimum_margin: epsilon;
 
-s.t. consistency {k in PREFERENCES}: sum {o in OUTCOMES} preferred_probability[k,o] * utility[o] - sum {o in OUTCOMES} other_probability[k,o] * utility[o] >= epsilon;
+s.t. consistency {k in PREFERENCES}: sum {o in OUTCOMES} prefered_probability[k,o] * utility[o] - sum {o in OUTCOMES} other_probability[k,o] * utility[o] >= epsilon;
 
 
 data;
@@ -17,7 +17,7 @@ data;
 set OUTCOMES := A B C D;
 set PREFERENCES := 1 2 3 4;
 
-param preferred_probability: A   B  C    D :=
+param prefered_probability: A   B  C    D :=
                             1 0.1 0.2 0.3 0.4
                             2 0.4 0.4 0.1 0.1
                             3 0.6 0.1 0.0 0.3
